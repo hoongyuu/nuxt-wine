@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-wine",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
+    "nuxt": "^2.14.6",
+    "vee-validate": "^3.4.5",
+    "vue-sweetalert2": "^4.1.1"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "push-dir": "^0.4.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0"
+  }
+}
